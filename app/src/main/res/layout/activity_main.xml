@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TextView para mostrar la humedad centrado -->
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humedad: --%"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <!-- TextView para mostrar el estado debajo de la humedad -->
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado: ---"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_below="@id/humidityTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
+
+    <!-- Botón para activar la bomba -->
+    <Button
+        android:id="@+id/btnActivatePump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENCENDER BOMBA"
+        android:layout_below="@id/statusTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <!-- Botón para desactivar la bomba -->
+    <Button
+        android:id="@+id/btnDeactivatePump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APAGAR BOMBA"
+        android:layout_below="@id/btnActivatePump"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
